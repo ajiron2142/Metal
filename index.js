@@ -1,10 +1,3 @@
-console.log("JavaScript file loaded correctly");
-//Make skull button stop all music
-
-//Make dancing button make cat image appear (hidden by default)
-
-//Make grad button make crying cat gif appear (hidden by default)
-
 //Variables
 const audioElements = document.querySelectorAll('audio');
 
@@ -26,7 +19,6 @@ function catAppear2(){
     div.id = 'divv3';
 }
 
-
 //Hides dancing cat gif
 function catDip() {
     let div = document.getElementById('div3');
@@ -40,22 +32,7 @@ function catDip() {
     }
 }
 
-
-
-
-console.log(audioElements);
-
-//for(let i = 1; i <= 10; i+=1){
-//    console.log(i);
-//}
-
-
-
-//let x = audioElements[0];
-//document.getElementById('dance').pause();
-//audioElements[0].pause();
-
-//Replace
+//Change color of $ and \|/_ Elements in Header
 document.addEventListener("DOMContentLoaded", function() {
     let asciiArt = document.getElementById('ascii');
     let text = asciiArt.innerHTML;
@@ -66,3 +43,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Update the inner HTML of the h1 tag with the modified text
     asciiArt.innerHTML = text;
   });
+
+//Debugging 
+/*
+console.log("JavaScript file loaded correctly");
+console.log(audioElements);
+
+let x = audioElements[0];
+document.getElementById('dance').pause();
+audioElements[0].pause();
+*/

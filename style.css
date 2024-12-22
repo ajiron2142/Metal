@@ -1,0 +1,197 @@
+#div1 {
+  color: aliceblue;
+  width: 119px;
+  height:27px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  z-index: -9999;
+
+  background-clip: border-box; 
+  padding: 1px;
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  animation: slide 100s linear infinite;
+}
+
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: calc(100% - 100px); /* Right edge */
+    top: calc(100% - 100px);  /* Bottom edge */
+  }
+  50% {
+    left: 50%; /* Center horizontally */
+    top: 0;    /* Top edge */
+  }
+  75% {
+    left: 0; /* Left edge */
+    top: 50%; /* Center vertically */
+  }
+  100% {
+    left: calc(100% - 100px); /* Back to the right edge */
+    top: calc(100% - 100px);  /* Back to bottom edge */
+  }
+}
+.head {
+  text-align: center;
+}
+
+h1 {
+font-family: monospace; /* Matches preformatted text style */
+white-space: pre; /* Preserves spacing and line breaks */
+background: linear-gradient(to top, rgb(106, 21, 219), rgba(0, 0, 0, 0.527));
+color: rgba(255, 105, 180, 0.572);
+font-size: 1vw;
+border-radius: 3000px; /* Rounds the edges */
+box-shadow: -15px 10px 15px rgba(0, 0, 0, 0.5); 
+margin: 2vw;
+}
+
+h1:hover {
+background-image: url('media/stick.gif'); /* Relative path */
+background-size: 200px 200px; /* Resize the background image */
+background-repeat: repeat; /* Repeat the background image */
+background-position: center;
+}
+
+.dollar {
+  color: rgba(27, 200, 223, 0.911); /* Color for '$' symbols */
+}
+
+body {
+  background: linear-gradient(to right, rgb(106, 21, 219), rgb(255, 105, 180)); /* Horizontal gradient */
+}
+
+
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 54px; 
+  cursor: pointer;
+  background: radial-gradient(circle, rgb(106, 21, 219), rgb(255, 105, 180));
+  margin: 1vw;
+}
+
+button {
+  cursor: url('media/mike2.png'), pointer; 
+}
+
+html {
+  cursor: url('media/rick.png'), pointer; 
+}
+
+button {
+  background-color: rgb(106, 21, 219);
+  padding: 12px 32px;
+  border-radius: 12px;
+  border: none;
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: -1px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.buttonContainer {
+  display: flex; /* Activates Flexbox */
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center; /* Centers buttons vertically */
+  gap: 50px; /* Adds spacing between buttons */
+  flex-wrap: wrap; /* Allows buttons to wrap if the screen is too small */
+  margin-top: 50px;
+}
+
+button:hover {
+  background-color: rgb(235, 125, 222); /* Hover color */
+  transform: scale(1.05); /* Grow effect */
+  box-shadow: 6px 6px 15px rgba(27, 200, 223, 0.911);
+}
+
+#div2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+}
+
+#div3{
+  display: grid;
+  place-items: center;
+  opacity: .5;
+}
+
+#div3 img {
+  width: 30%;
+  height: auto;
+}
+
+#divv3{
+  display: grid;
+  place-items: center;
+  opacity: .5;
+}
+
+#divv3 img {
+  width: 30%;
+  height: auto;
+}
+
+
+#hideCat1{
+  display: none; 
+}
+
+#hideCat2{
+  display: none;
+}
+
+
+
+#div4 {
+  color: rgba(0, 0, 0, 0.911);
+  animation: bounce 50s linear infinite; /* Moves at a constant rate */
+  position: fixed;
+  bottom: 3%;
+  left: 50%; /* Keeps it horizontally centered initially */
+  transform: translateX(-50%); /* Adjusts the horizontal centering */
+  z-index: -99999;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-100vw); /* Starts off-screen to the left */
+  }
+  100% {
+    transform: translateX(100vw); /* Ends off-screen to the right */
+  }
+}
+
+
+pre{
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+p{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+#metalBut {
+  all: unset;
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: url('media/mike2.png'), pointer;
+  padding: 20px;
+  font-size: 1vw;
+}
